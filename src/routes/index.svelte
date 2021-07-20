@@ -1,4 +1,4 @@
-<div class="flex justify-center">
+<!-- <div class="flex justify-center">
     <h1 class="text-7xl font-bold text-cyan-light">My movie site</h1>
 </div>
 <br>
@@ -13,7 +13,11 @@
     <a class="text-4xl font-bold text-cyan-light" href="./searchMovies"
         >Search Movies</a
     >
-</div>
+</div> -->
 
-
+<script>
+    import MovieDetails from "$lib/MovieDetails.svelte"
+</script>
    
+<MovieDetails id={508943}/>
+

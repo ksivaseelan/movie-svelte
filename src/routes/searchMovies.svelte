@@ -1,4 +1,5 @@
 <script>
+    import Card from "$lib/Card.svelte";
     import { writable } from "svelte/store";
 
     let query;
@@ -35,7 +36,8 @@
     class="relative text-lg bg-transparent text-cyan-light p-6 flex justify-center mb-10"
 >
     <div
-        class="flex justify-center items-center border-b border-b-2 border-cyan-dark py-2 w-{700}"
+        id="test"
+        class="flex justify-center items-center border-b-2 border-cyan-dark py-2 w-full"
     >
         <input
             class="bg-black border-none px-2 focus:outline-none"
@@ -48,36 +50,7 @@
 
 <div class="grid md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-5">
     {#each $searchedMovies as movie}
-        <div class="group m-6 relative h-500 w-600">
-            <img
-                class="group-hover:opacity-10"
-                src="https://image.tmdb.org/t/p/original/{movie.image}"
-                alt="Movie poster not found"
-            />
-            <div class=" p-6 absolute inset-x-0 bottom-0 text-white">
-                <h4
-                    class="group-hover:block hidden text-lg font-bold text-gray-light"
-                >
-                    {movie.title}
-                </h4>
-                <br />
-                <p
-                    class="group-hover:block hidden font-semibold text-gray-light"
-                >
-                    {movie.rating} out of {movie.count}
-                </p>
-                <br />
-                <p
-                    class="group-hover:block hidden font-semibold text-gray-light"
-                >
-                    Release date: {movie.date}
-                </p>
-                <br />
-                <p class="group-hover:block hidden text-gray-light">
-                    Synopsis: {movie.summary.slice(0, 50) + "..."}
-                </p>
-            </div>
-        </div>
+        <Card {movie} />
     {/each}
 </div>
 
