@@ -4,6 +4,6 @@
 </script>
 
 <div class="bg-black min-h-screen">
-    <Header/>
+    <Header />
     <slot />
 </div>

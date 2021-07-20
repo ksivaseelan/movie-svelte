@@ -1,17 +1,20 @@
-<script>
-    import { onMount } from "svelte";
-
-    export let id;
-
-    let movie = [];
-    onMount(async () => {
+<script context="module">
+    export async function load(ctx) {
+        let id = ctx.page.params.slug;
         const url = `https://api.themoviedb.org/3/movie/${id}?api_key=70ba738298e901b70e308750acbe2fae`;
         const res = await fetch(url);
         movie = await res.json();
-    });
-    console.log(movie.title);
+        console.log(movie);
+        return { props: { id, movie } };
+    }
 </script>
 
+<script>
+    export let movie;
+    export let id;
+</script>
+
+test
 <div
     style="background-image: url(https://image.tmdb.org/t/p/original{movie.backdrop_path});
             background-repeat: no-repeat;
