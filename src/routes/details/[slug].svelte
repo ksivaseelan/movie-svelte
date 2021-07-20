@@ -1,17 +1,26 @@
 <script context="module">
-    export async function load(ctx) {
-        let id = ctx.page.params.slug;
+    export async function load({ page, fetch }) {
+        let id = page.params.slug;
         const url = `https://api.themoviedb.org/3/movie/${id}?api_key=70ba738298e901b70e308750acbe2fae`;
         const res = await fetch(url);
-        movie = await res.json();
-        console.log(movie);
-        return { props: { id, movie } };
-    }
+        
+        if (res.ok) {
+			return {
+				props: {
+					movie: await res.json()
+				}
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load ${url}`)
+		};
+	}
 </script>
 
 <script>
     export let movie;
-    export let id;
 </script>
 
 test
