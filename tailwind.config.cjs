@@ -5,7 +5,7 @@ const config = {
 	],
 	theme: {
 		colors: {
-			transparent: 'transarent',
+			transparent: 'transparent',
 			current: 'currentColor',
 			black: {
 				DEFAULT: '#0B0C10'
