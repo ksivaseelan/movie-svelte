@@ -19,6 +19,7 @@
                         summary: data.overview,
                         rating: data.vote_average,
                         count: data.vote_count,
+                        id: data.id,
                     };
                 });
                 searchedMovies.set(loadedMovies);
@@ -28,7 +29,7 @@
     }
 </script>
 
-<div class="bg-black px-6 pt-3">
+<div class="bg-black px-6 pt-3 flex justify-center">
     <h1 class="text-4xl font-bold text-cyan-light">Search Movies</h1>
 </div>
 
