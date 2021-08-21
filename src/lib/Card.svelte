@@ -2,17 +2,19 @@
     export let movie;
 </script>
 
-<a
-    href="/details/{movie.id}"
->
+<a sveltekit:prefetch href="/details/{movie.id}">
     <div class="group m-6 relative h-500 w-600">
-        <object title=placeholder-for-error data="/images/film-reel.png" type="image/png">
-        <img
-            class="group-hover:opacity-10"
-            src="https://image.tmdb.org/t/p/w500/{movie.image}"
-            alt="Movie poster not found"
-        />
-    </object>
+        <object
+            title="placeholder-for-error"
+            data="/images/film-reel.png"
+            type="image/png"
+        >
+            <img
+                class="group-hover:opacity-10"
+                src="https://image.tmdb.org/t/p/w500/{movie.image}"
+                alt="Movie poster not found"
+            />
+        </object>
         <div class=" p-6 absolute inset-x-0 bottom-0 text-white">
             <h4
                 class="group-hover:block hidden text-lg font-bold text-gray-light"

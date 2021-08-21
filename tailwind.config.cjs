@@ -17,7 +17,11 @@ const config = {
 			cyan: {
 				dark: '#45A29E',
 				light: '#66FCF1'
+			},
+			white: {
+				DEFAULT: '#FFFFFF',
 			}
+
 		},
 		extend: {},
 	},

@@ -24,20 +24,48 @@
 </script>
 
 <div
+    id="bg"
     style="background-image: url(https://image.tmdb.org/t/p/original{movie.backdrop_path});
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;"
     class="h-screen"
 >
-    <div class="h-screen text-xl backdrop-blur text-cyan-dark">
-        <h1>Title: {movie.title}</h1>
-        <p>Summary: {movie.overview}</p>
+    <div
+        id="text-block"
+        class="flex flex-col justify-center items-center h-screen text-3xl font-bold backdrop-blur text-white"
+    >
+        <h1>{movie.title}</h1>
+        <br />
+        <p>{movie.overview}</p>
+        <br />
+        <p>
+            Release Date:
+            {movie.release_date.slice(8, 10)}
+            {movie.release_date.slice(5, 7)}
+            {movie.release_date.slice(0, 4)}
+        </p>
+        <p>Runtime: {movie.runtime} mins</p>
+        <br />
         <p>Genres:</p>
-        <p>{movie.genres}</p>
-        <img
-            src="https://image.tmdb.org/t/p/w500/{movie.poster_path}"
-            alt="Poster not found"
-        />
+        {#each movie.genres as genres}
+            <li>{genres.name}</li>
+        {/each}
+        <br />
+        <p>Average Rating: {movie.vote_average}</p>
+        <p>Rating count from: {movie.vote_count}</p>
+        <br />
+        <p>Produced by:</p>
+        {#each movie.production_companies as prod}
+            <li>{prod.name} from {prod.origin_country}</li>
+        {/each}
+        <br />
+        <a href={movie.homepage}>Go to website</a>
     </div>
 </div>
+
+<style>
+    #text-block {
+        mix-blend-mode: difference;
+    }
+</style>
