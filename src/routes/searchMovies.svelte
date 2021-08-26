@@ -1,8 +1,13 @@
 <script>
     import Card from "$lib/Card.svelte";
     import { writable } from "svelte/store";
+    import debounce from "just-debounce-it"
 
-    let query;
+    let query='';
+
+    const handleInput = debounce (event => {
+			query = event.target.value;
+		}, 1000);
 
     export const searchedMovies = writable([]);
     $: {
@@ -11,7 +16,7 @@
                 const url = `https://api.themoviedb.org/3/search/movie?api_key=70ba738298e901b70e308750acbe2fae&language=en-US&query=${query}&page=1&include_adult=false`;
                 const res = await fetch(url);
                 const data = await res.json();
-                const loadedMovies = data.results.map((data) => {
+                const mappedMovies = data.results.map((data) => {
                     return {
                         title: data.title,
                         date: data.release_date,
@@ -22,7 +27,7 @@
                         id: data.id,
                     };
                 });
-                searchedMovies.set(loadedMovies);
+                searchedMovies.set(mappedMovies);
             };
             fetchSearchedMovies();
         }
@@ -41,10 +46,11 @@
         class="flex justify-center items-center border-b-2 border-cyan-dark py-2 w-full"
     >
         <input
+            on:input={handleInput}
             class="bg-black border-none px-2 focus:outline-none"
             type="text"
             placeholder="Search movies here"
-            bind:value={query}
+            value={query}
         />
     </div>
 </div>
