@@ -31,13 +31,11 @@
             background-position: center;
             background-size: cover;
             "
-    class="h-screen"
->
+    class="h-screen">
     <div class="bg-black bg-opacity-80">
         <div
             id="text-block"
-            class="flex flex-col justify-center items-center h-screen text-3xl font-bold text-white"
-        >
+            class="px-40 flex flex-col justify-center items-center h-screen text-3xl font-bold text-white">
             <h1 class="text-6xl">{movie.title}</h1>
             <br />
             <p>{movie.overview}</p>
@@ -50,7 +48,7 @@
             </p>
             <p>Runtime: {movie.runtime} mins</p>
             <br />
-            <p>Genres:</p>
+            <p class="text-7xl">Genres:</p>
             {#each movie.genres as genres}
                 <li>{genres.name}</li>
             {/each}

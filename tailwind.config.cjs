@@ -8,24 +8,25 @@ const config = {
 			transparent: 'transparent',
 			current: 'currentColor',
 			black: {
-				DEFAULT: '#0B0C10'
+				DEFAULT: '#0f0e17'
 			},
 			gray: {
-				dark: '#1F2833',
-				light: '#C5C6C7'
+				dark: '#a7a9be',
+				light: '#fffffe'
 			},
-			cyan: {
-				dark: '#45A29E',
-				light: '#66FCF1'
+			orange: {
+				DEFAULT: "#ff8906"
 			},
 			white: {
 				DEFAULT: '#FFFFFF',
 			}
 
 		},
-		extend: {},
+		extend: { },
+		darkMode: 'class'
 	},
 	plugins: [],
+
 };
 
 module.exports = config;

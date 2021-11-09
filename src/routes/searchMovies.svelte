@@ -1,13 +1,13 @@
 <script>
     import Card from "$lib/Card.svelte";
     import { writable } from "svelte/store";
-    import debounce from "just-debounce-it"
+    import debounce from "just-debounce-it";
 
-    let query='';
+    let query = "";
 
-    const handleInput = debounce (event => {
-			query = event.target.value;
-		}, 1000);
+    const handleInput = debounce((event) => {
+        query = event.target.value;
+    }, 1000);
 
     export const searchedMovies = writable([]);
     $: {
@@ -34,12 +34,8 @@
     }
 </script>
 
-<div class="bg-black px-6 pt-3 flex justify-centercd">
-    <h1 class="text-4xl font-bold text-cyan-light">Search Movies</h1>
-</div>
-
 <div
-    class="relative text-lg bg-transparent text-cyan-light p-6 flex justify-center mb-10"
+    class="relative text-lg bg-transparent text-orange p-6 flex justify-center mb-10"
 >
     <div
         id="test"
@@ -47,7 +43,7 @@
     >
         <input
             on:input={handleInput}
-            class="bg-black border-none px-2 focus:outline-none"
+            class="bg-black border-none px-2 focus:outline-none text-gray-light"
             type="text"
             placeholder="Search movies here"
             value={query}
@@ -63,7 +59,7 @@
 
 <style>
     ::placeholder {
-        color: #c5c6c7;
+        color: #a7a9be;
         opacity: 1;
     }
 </style>
