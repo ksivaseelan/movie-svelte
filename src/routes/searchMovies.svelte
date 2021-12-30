@@ -35,19 +35,15 @@
 </script>
 
 <div
-    class="relative text-lg bg-transparent text-orange p-6 flex justify-center mb-10"
->
+    class="relative text-lg bg-transparent text-orange p-6 flex justify-center mb-10">
     <div
-        id="test"
-        class="flex justify-center items-center border-b-2 border-cyan-dark py-2 w-full"
-    >
+        class="flex justify-center items-center border-b-2 border-cyan-dark py-2 w-full">
         <input
             on:input={handleInput}
             class="bg-black border-none px-2 focus:outline-none text-gray-light"
             type="text"
             placeholder="Search movies here"
-            value={query}
-        />
+            value={query} />
     </div>
 </div>
 

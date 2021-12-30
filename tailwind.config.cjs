@@ -22,10 +22,10 @@ const config = {
 			}
 
 		},
-		extend: { },
+		extend: {},
 		darkMode: 'class'
 	},
-	plugins: [],
+	plugins: [require("daisyui"),],
 
 };
 

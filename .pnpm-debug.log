@@ -1,0 +1,219 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "movie-app",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "preview": "svelte-kit preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+      },
+      "devDependencies": {
+        "@supabase/supabase-js": "^1.8.0",
+        "@sveltejs/kit": "next",
+        "autoprefixer": "^10.2.6",
+        "cssnano": "^5.0.6",
+        "postcss": "^8.3.5",
+        "postcss-load-config": "^3.1.0",
+        "svelte": "^3.34.0",
+        "svelte-check": "^2.2.3",
+        "svelte-preprocess": "^4.7.3",
+        "tailwindcss": "^2.2.2",
+        "tslib": "^2.3.0",
+        "typescript": "^4.3.5"
+      },
+      "type": "module",
+      "dependencies": {
+        "just-debounce-it": "^1.5.0"
+      }
+    },
+    "prefix": "/home/kogul/Projects/my-app"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/kogul/.pnpm-store/v3",
+    "virtualStoreDir": "/home/kogul/Projects/my-app/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/kogul/Projects/my-app",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-load-config/3.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "postcss-load-config",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-load-config/3.1.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/just-debounce-it/1.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "just-debounce-it",
+      "rawSpec": "^1.5.0"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/just-debounce-it/1.5.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-load-config/3.1.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "found_in_store"
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/just-debounce-it/1.5.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "found_in_store"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tslib",
+      "rawSpec": "^2.3.0"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cssnano/5.0.10",
+    "wanted": {
+      "dependentId": ".",
+      "name": "cssnano",
+      "rawSpec": "^5.0.6"
+    }
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cssnano/5.0.10",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@supabase/supabase-js/1.27.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@supabase/supabase-js",
+      "rawSpec": "^1.8.0"
+    }
+  },
+  "16 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@supabase/supabase-js/1.27.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "17 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/cssnano/5.0.10",
+    "size": 3397,
+    "status": "started"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@supabase/supabase-js/1.27.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cssnano/5.0.10",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "fetched"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-check/2.2.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-check",
+      "rawSpec": "^2.2.3"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-check/2.2.8",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-preprocess/4.9.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-preprocess",
+      "rawSpec": "^4.7.3"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.9.8",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.9.8",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "found_in_store"
+  },
+  "25 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte-check/2.2.8",
+    "size": 656151,
+    "status": "started"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/autoprefixer/10.4.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "autoprefixer",
+      "rawSpec": "^10.2.6"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/autoprefixer/10.4.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "resolved"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/autoprefixer/10.4.0",
+    "requester": "/home/kogul/Projects/my-app",
+    "status": "found_in_store"
+  },
+  "29 warn pnpm:install-check": {
+    "message": "Unsupported engine for registry.npmjs.org/@sveltejs/kit/1.0.0-next.196: wanted: {\"node\":\">=14.13\"} (current: {\"node\":\"v12.18.2\",\"pnpm\":\"6.21.1\"})",
+    "prefix": "/home/kogul/Projects/my-app"
+  },
+  "30 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.196",
+    "wanted": {
+      "node": ">=14.13"
+    },
+    "current": {
+      "node": "v12.18.2",
+      "pnpm": "6.21.1"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "Unsupported engine for registry.npmjs.org/@sveltejs/kit/1.0.0-next.196: wanted: {\"node\":\">=14.13\"} (current: {\"node\":\"v12.18.2\",\"pnpm\":\"6.21.1\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "pnpm: Unsupported engine for registry.npmjs.org/@sveltejs/kit/1.0.0-next.196: wanted: {\"node\":\">=14.13\"} (current: {\"node\":\"v12.18.2\",\"pnpm\":\"6.21.1\"})\n    at checkEngine (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:36022:16)\n    at checkPackage (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:38110:104)\n    at packageIsInstallable (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:38080:20)\n    at resolveAndFetch (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:71376:117)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async resolveDependency (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:112409:23)\n    at async resolveDependenciesOfDependency (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:112244:39)\n    at async Promise.all (index 1)\n    at async resolveDependencies (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.21.1/node_modules/pnpm/dist/pnpm.cjs:112211:29)"
+    }
+  }
+}
